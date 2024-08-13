@@ -1,6 +1,6 @@
-import GithubProfile from "../images/github-profile.png";
-import calculoFinanciero from "../images/calculo-financiero.png";
-import Cvinter from '../images/cvinter.png';
+import GithubProfile from "../images/github-profile.webp";
+import calculoFinanciero from "../images/calculo-financiero.webp";
+import Cvinter from '../images/cvinter.webp';
 
 export const project = [
     {
