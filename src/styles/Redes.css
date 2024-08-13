@@ -1,0 +1,27 @@
+.name-red::after, .name-red1::after, .name-red2::after, .name-red3::after {
+  content: "Github";
+  position: absolute;
+  color: rgb(226 232 240);
+  top: 90px;
+  left: 10px;
+  opacity: 0;
+  transform: translateY(0);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.name-red:hover::after, .name-red1:hover::after, .name-red2:hover::after, .name-red3:hover::after {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+.name-red1::after {
+  content: "Linkedin";
+  left: 75px;
+}
+.name-red2::after {
+  content: "Whatsapp";
+  left: 135px;
+}
+.name-red3::after {
+  content: "CV";
+  left: 240px;
+  filter: drop-shadow(0 0 4px 3px red);
+}

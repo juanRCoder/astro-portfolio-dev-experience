@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import { FaVuejs } from "react-icons/fa";
+import { SiAngular, SiTailwindcss } from "react-icons/si";
+import { FaReact } from "react-icons/fa6";
+import {project} from '../utils/dataProjects';
+---
+
+<article class="max-w-5xl mx-auto px-5 text-slate-200 pb-16">
+  <h1
+    id="Projects"
+    class="pt-24 text-left sm:text-center text-4xl sm:text-5xl font-bold mb-10"
+  >
+    Proyectos
+  </h1>
+  <section>
+    <div class="relative grid sm:grid-cols-2 gap-4">
+      {
+        project.map((project) => (
+          <div class="relative">
+            <Image
+              src={project.img}
+              class="object-cover rounded-md"
+              alt="photo_juan"
+              loading="lazy"
+            />
+            <div class="transition rounded-md absolute top-0 left-0 opacity-0 hover:opacity-100 bg-black/80 flex h-full w-full justify-center items-center">
+              <aside class="flex flex-col gap-4">
+                <h3 class="text-white text-2xl text-center font-bold">
+                  {project.name}
+                </h3>
+                <div class="flex items-center gap-3 justify-center">
+                  {project.technologys.map((tc, i) => (
+                    <Fragment key={i}>
+                      {tc === "Vue" && (
+                          <FaVuejs className="text-2xl text-teal-300" />
+                          <p>{tc}</p>
+                      )}
+                      {tc === "TailwindCSS" && (
+                          <SiTailwindcss className="text-center text-2xl text-blue-400" />
+                          <p>{tc}</p>
+                      )}
+                      {tc === "Angular" && (
+                          <SiAngular className="text-center text-2xl text-red-500" />
+                          <p>{tc}</p>
+                      )}
+                      {tc === 'React' && (
+                          <FaReact className="text-center text-2xl text-blue-500" />
+                          <p>{tc}</p>
+                      )}
+                    </Fragment>
+                  ))}
+                </div>
+                <p class="hidden md:block text-sm text-center px-2">{project.description}</p>
+                <div class="flex text-white gap-4 justify-center">
+                  <a href={project.github} target="_BLANK">
+                    <button class="bg-gray-500 px-4 py-1 rounded-md">
+                      Github
+                    </button>
+                  </a>
+                  <a href={project.website} target="_BLANK">
+                    <button class="bg-blue-500 px-4 py-1 rounded-md">
+                      WebSite
+                    </button>
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</article>

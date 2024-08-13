@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import photo from "../images/photo_!bg.png";
+import '../styles/Hero.css'
+---
+
+<section class="pb-20 sm:pb-0 relative md:justify-center sm:flex-row sm:items-center flex flex-col-reverse pt-[90px] gap-8 py-5 transition sm:mx-auto max-w-5xl px-5">
+  <div class="sm:text-left text-center">
+    <h1 class="md:text-[90px] md:w-96 sm:text-7xl text-5xl text-teal-400 font-semibold">Juan Ramirez</h1>
+    <h4 class="md:mt-4 md:text-3xl mb-4 text-2xl text-slate-200">Desarrollador Web</h4>
+    <a href="mailto:guillecarck@gmail.com">
+      <button class="sm:px-4 sm:py-2 sm:text-base text-lg border-2 border-text-blue-400 px-6 py-3 rounded-md text-slate-200 hover:border-teal-400 hover:bg-teal-400 hover:text-slate-200 font-bold">
+        Contactame!
+      </button>
+    </a>
+  </div>
+  <div class="relative flex flex-col items-center">
+    <Image
+      src={photo}
+      alt="photo_juan"
+      class={`object-cover efecto-imagen lg:w-[500px] lg:h-[500px] md:w-96 md:h-96 sm:h-80 grayscale-[50%] h-[75%] w-[75%] sm:w-[30rem]`}
+      loading="eager"
+    />
+  </div>
+</section>
