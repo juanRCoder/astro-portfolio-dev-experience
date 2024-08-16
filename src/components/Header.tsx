@@ -9,7 +9,14 @@ export default function Header() {
   return (
     <>
       <header className={`z-50 flex px-4 justify-between items-center py-5 fixed top-0 w-full border-b-[1px] border-[#11111111] ${toggleNav ? '' : 'backdrop-blur'}`}>
-        <span className="block h-16 w-16 bg-teal-400 rounded-full"></span>
+        <span className="block h-16 w-16 rounded-full">
+          <img 
+            src='/logo.webp'
+            alt="logo juanRCoder"
+            loading="eager"
+            className="cursor-pointer"
+          />
+        </span>
         <GiHamburgerMenu
           onClick={() => setToggleNav(!toggleNav)}
           className="sm:hidden text-5xl text-slate-200"

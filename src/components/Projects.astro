@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { FaVuejs } from "react-icons/fa";
-import { SiAngular, SiTailwindcss } from "react-icons/si";
+import { SiAngular, SiTailwindcss, SiAstro } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import {project} from '../utils/dataProjects';
 ---
@@ -47,6 +47,10 @@ import {project} from '../utils/dataProjects';
                       )}
                       {tc === 'React' && (
                           <FaReact className="text-center text-2xl text-blue-500" />
+                          <p>{tc}</p>
+                      )}
+                      {tc === 'Astro' && (
+                          <SiAstro className="text-center text-2xl text-orange-500" />
                           <p>{tc}</p>
                       )}
                     </Fragment>

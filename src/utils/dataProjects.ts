@@ -1,6 +1,7 @@
 import GithubProfile from "../images/github-profile.webp";
 import calculoFinanciero from "../images/calculo-financiero.webp";
 import Cvinter from '../images/cvinter.webp';
+import HeberRamirez from '../images/heberRamirez.png';
 
 export const project = [
     {
@@ -26,7 +27,7 @@ export const project = [
       website: "https://angular-mini-projects.vercel.app/calculo-financiero",
     },
     {
-      id: 2,
+      id: 3,
       img: Cvinter,
       name: "CVinter App",
       description:
@@ -35,5 +36,16 @@ export const project = [
       github:
         "https://github.com/juanRCoder/i002-igrowker-cvinter-front",
       website: "https://i002-cvinter-front-phi.vercel.app/",
+    },
+    {
+      id: 4,
+      img: HeberRamirez,
+      name: "Web Heber Ramirez",
+      description:
+        "Pagina web describiendo a mi padre, maestro constructor de obras.",
+      technologys: ["Astro", "TailwindCSS"],
+      github:
+        "https://github.com/juanRCoder/proyectos-ASTRO",
+      website: "https://proyectos-astro.vercel.app/heberRamirez",
     },
   ];

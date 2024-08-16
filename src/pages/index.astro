@@ -11,38 +11,21 @@ import Contacto from "../components/Contacto";
 
 <HomeLayout>
   <Header client:load />
+
   <section class="relative background">
     <Hero />
-    <div class="-bottom-6 z-30 absolute w-full flex items-center">
-      <span class="w-full h-2 bg-teal-400 rounded-full"></span>
-      <Redes />
-      <span class="w-full h-2 bg-teal-400 rounded-full"></span>
-    </div>
+    <Redes />
   </section>
+  
   <About />
   <Skills />
   <Projects />
+
   <section class="relative my-16">
-    <div class="-top-6 z-30 absolute w-full flex items-center">
-      <span class="w-full h-2 bg-teal-400 rounded-full"></span>
-      <h1
-        id="Contact"
-        class="text-slate-200 text-left sm:text-center text-4xl sm:text-5xl font-bold px-5"
-        data-aos="fade-up"
-      >
-        Contactame
-      </h1>
-      <span class="w-full h-2 bg-teal-400 rounded-full"></span>
-    </div>
-    <div class="mx-4 sm:mx-auto">
-      <Contacto />
-    </div>
-    <div class="-bottom-6 z-30 absolute w-full flex items-center">
-      <span class="w-full h-2 bg-teal-400 rounded-full"></span>
-      <Redes />
-      <span class="w-full h-2 bg-teal-400 rounded-full"></span>
-    </div>
+    <Contacto />
+    <Redes />
   </section>
+  
   <p class="text-2xl sm:text-4xl py-20 text-teal-400 font-semibold text-center">
     "Gracias por Scrollear"
   </p>
