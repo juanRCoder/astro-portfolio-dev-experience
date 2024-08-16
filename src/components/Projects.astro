@@ -10,6 +10,7 @@ import {project} from '../utils/dataProjects';
   <h1
     id="Projects"
     class="pt-24 text-left sm:text-center text-4xl sm:text-5xl font-bold mb-10"
+    data-aos="fade-up"
   >
     Proyectos
   </h1>
@@ -17,7 +18,7 @@ import {project} from '../utils/dataProjects';
     <div class="relative grid sm:grid-cols-2 gap-4">
       {
         project.map((project) => (
-          <div class="relative">
+          <div class="relative" data-aos="fade-up">
             <Image
               src={project.img}
               class="object-cover rounded-md"

@@ -1,3 +1,7 @@
+---
+import AOSInitializer from '../components/AOSInitializer'
+---
+
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
@@ -31,5 +35,6 @@
   </style>
   <body class="font-barlow relative">
     <slot />
+    <AOSInitializer client:only="react" />
   </body>
 </html>
