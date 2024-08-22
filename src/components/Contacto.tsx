@@ -21,7 +21,7 @@ export default function Contacto() {
         <aside className="sm:grid-cols-2 max-w-2xl pt-8 pb-24 relative mx-auto top-6 grid items gap-4">
           <div className="outline outline-1 outline-white py-4 rounded-lg flex justify-center gap-4" data-aos="fade-down">
             <MdEmail className="text-3xl text-slate-200" />
-            <p className="text-xl text-teal-400">guillecarck@gmail.com</p>
+            <a className="text-xl text-teal-400 underline" href="mailto:guillecarck@gmail.com">guillecarck@gmail.com</a>
           </div>
           <div className="outline outline-1 outline-white py-4 rounded-lg flex justify-center gap-4" data-aos="fade-down">
             <FaPhoneAlt className="text-3xl text-slate-200" />
