@@ -14,7 +14,6 @@ export default function Habilidades() {
           ['NEXT', <RiNextjsFill className="text-6xl text-black" />],
           ['ASTRO', <SiAstro className="text-6xl text-orange-500" />],
           ['TAILWINDCSS', <SiTailwindcss className="text-6xl text-blue-500" />],
-          ['ANGULAR', <SiAngular className="text-6xl text-red-500" />],
           ['NODE', <FaNodeJs className="text-6xl text-green-500" />],
           ['EXPRESS', <SiExpress className="text-6xl text-white" />],
           ['MYSQL', <SiMysql className="text-6xl text-pink-200" />],
