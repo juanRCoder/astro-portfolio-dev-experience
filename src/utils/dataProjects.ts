@@ -23,8 +23,8 @@ export const project = [
         "Pagina web con finalidad de mostrar ingresos, gastos y ahorro economicos de manera grafica y expresiva.",
       technologys: ["Angular", "TailwindCSS"],
       github:
-        "https://github.com/juanRCoder/proyectos-ANGULAR/tree/main/src/app/calculo-financiero",
-      website: "https://angular-mini-projects.vercel.app/calculo-financiero",
+        "https://github.com/juanRCoder/proyectos-angular/tree/main/packages/calculo-financiero",
+      website: "https://calculo-financiero-ag01.netlify.app/",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export const project = [
         "Pagina web describiendo a mi padre, maestro constructor de obras.",
       technologys: ["Astro", "TailwindCSS"],
       github:
-        "https://github.com/juanRCoder/proyectos-ASTRO",
-      website: "https://proyectos-astro.vercel.app/heberRamirez",
+        "https://github.com/juanRCoder/proyectos-astro/tree/main/packages/pagina-heber",
+      website: "https://pagina-heber-as01.netlify.app/",
     },
   ];
